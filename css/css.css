@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+html,body{
+	margin: 0;
+	padding: 0; 
+	font-family: 'Baloo', cursive;
+	color: #002948;
+} 
+.p0{ padding: 0;} 
+a,a:hover,a:visited,a:active,a:focus{text-decoration: none;} 
+
+
+.thempOne{
+	background: #002948;
+	background-size: cover;
+}
+
+.thisPanel {
+	height: 100vh;
+	perspective: 600px;
+}
+.panelContent {
+    position: absolute;
+    float: none;
+    right: 0;
+    top: 40%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.51);
+    margin: auto;
+    padding: 25px;
+    border-radius: 4px;
+	-webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    transform: translateY(-50%) rotate3d(1,0,0,0deg);
+	
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+    0%   {transform: translateY(-50%) rotate3d(1,0,0,20deg);}
+    50%   {transform: translateY(-50%) rotate3d(1,0,0,-20deg);}
+    100%   {transform: translateY(-50%) rotate3d(1,0,0,0deg);}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {transform: translateY(-50%) rotate3d(1,0,0,20deg);}
+    50%   {transform: translateY(-50%) rotate3d(1,0,0,-20deg);}
+    100%   {transform: translateY(-50%) rotate3d(1,0,0,0deg);}
+}
+ 
+
+.panelContent h2 {
+	margin: 0;
+}
+.panelContent .formGr{
+	position: relative;
+    margin: 18px 0px;
+}
+.panelContent .formGr input.textCt{
+	width: 100%;
+    background: #fff;
+	padding: 10px;
+	border: none;
+    border-bottom: 2px solid transparent;
+    border-radius: 4px;
+	color: #555;
+    font-size: 12px;
+    outline: 0;
+}
+.panelContent .formGr input.textCt:focus{ 
+    border-bottom: 2px solid #002948;
+}
+.panelContent .formGr.btnX{
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+.panelContent .formGr button{
+	width: 200px;
+    height: 35px;
+	display: inline-block;
+    background: #fff;
+    border:none;
+    outline: 0;
+	color: #fff;
+	margin: 5px 0 0 0;
+    font-size: 15px;
+    border-radius: 4px;
+}
+.panelContent .formGr button.login{
+    background: #002948;
+}
+.panelContent .formGr button.login:hover{
+    background: #03365d;
+}
+.panelContent .formGr button.remb{
+    background: #002948;
+}
+.panelContent .formGr button.remb:hover{
+    background: #03365d;
+}
+
+.panelContent .copyright{
+	font-size: 11px;
+    text-align: center;
+    color: #333;
+}
